@@ -1,9 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>TODO supply a title</title>
@@ -24,31 +19,162 @@ and open the template in the editor.
         <!--Importar o CSS do Bootstrap-->
         <link rel="stylesheet" href="css/bootstrap.css" />
 
+        <!--imporat icons--> 
+        <script src="https://use.fontawesome.com/3072cce32b.js"></script>
+        <!--importar css-->
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+        
+        <style>
+            
+            
+            form{
+                
+                width: 500px;
+                height: 300px;
+                
+                
+            }
+            
+            
+            
+        </style>
+        
+        
+        
     </head>
     <body style="background-color: #C0C0C0">
         
-        <div class="container">
+         <div class="container" style="background-color: #e7e7e7">
+
+
+
+
+
+                    <!--topo-->
+                    <div class="container"> 
+
+                        <nav class="navbar navbar-dark bg-dark">
+                            <a class="navbar-brand font-weight-bold text-success"   href="index.html">Beer House - Conveniência e Tabacaria</a>
+
+                            <!--<a class="nav-item nav-link active text-success" href="#">Acessorios <span class="sr-only">(current)</span></a>-->
+                            <div class="dropdown">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Meus pedidos
+                                </button>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
+                                    <h1>Arrumar</h1>
+                                </div>
+                            </div>
+
+
+
+                            <!------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+                            <!------------------------------------------------------------------------------------------------------------------------------------------------>
+                            <!--<a class="nav-item nav-link text-success" href="#">Essência</a>-->
+
+
+                            <div class="dropdown">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Minha Conta
+                                </button>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
+                                    <h1>Arrumar</h1>
+                                </div>
+                            </div>
+
+                            <!---------------------------------------------------------------------------------------------------------------------------->
+                            <a class="nav-item nav-link text-success" href="#fim">Contato</a>
+
+
+
+                            <form class="form-inline">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+
+                            </form>
+
+                        </nav>
+
+
+                        <!--<h4>Menu horizontal (navbar)</h4>-->
+                    </div>
+
+
+                    <div class="container-fluid"  >
+                        <div class="col"  > 
+                        <div  class="row" >
+                            <div style=" padding-left: 975px ;float: right;  "> 
+                                <a href="comprar.html" /> <img style="width: 110px; height: 40px; float: right; " src="img/meucarrinho.png" />  </a>
+                        
+                        </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+                    
+                    
+
+
+                    <div class="container"> <!-- Container de login --> 
+
+
+                        <div  class="dropdown">
+                            <button   class="btn btn-outline-success my-2 my-sm-0 bg-dark" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Login
+                            </button>
+
+                            <div class="dropdown-menu bg-dark">
+                                <form class="px-4 py-3">
+                                    <div class="form-group">
+                                        <label class="text-success" for="exampleDropdownFormEmail1">Email</label>
+                                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="text-success" for="exampleDropdownFormPassword1">Senha</label>
+                                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label text-success">
+                                            <input type="checkbox" class=" form-check-input ">
+                                            Lembrar
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-success my-2 my-sm-0" >Entrar</button>
+                                </form>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-success" href=Cadastro.html>Cadastrar</a>
+                                <a class="dropdown-item text-success" href="#">Esqueceu a senha?</a>
+                            </div>
+                        </div>
+                    </div>
         
-        <div>Login</div>
+        
+        
+        
+        
+        
+        <div class="col">
+            
+            <div class="container-fluid" style="height: 100px">
+        
+        <div>Cadastro</div>
     <center>
         <form>
              <div class="form-group">
     <label for="exampleInputEmail1">Nome completo</label>
     <input type="text" class="form-control" id="exampleInputNome" aria-describedby="Nome" placeholder="Nome completo">
-    <small id="emailHelp" class="form-text text-muted">Digite email usado no cadastro</small>
+    <small id="emailHelp" class="form-text text-muted">Digite seu nome completo</small>
   </div>
             
              <div class="form-group">
     <label for="exampleInputEmail1">Email</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-    <small id="emailHelp" class="form-text text-muted">Digite email usado no cadastro</small>
+    <small id="emailHelp" class="form-text text-muted">Digite email valido</small>
   </div>
             
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
-    <small id="emailHelp" class="form-text text-muted">Digite email usado no cadastro</small>
-  </div>
+  
   <div class="form-group">
     <label for="exampleInputPassword1">Senha</label>
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
@@ -60,11 +186,18 @@ and open the template in the editor.
     </label>
   </div>
   <button type="submit" class="btn btn-primary">Entrar</button>
+  <button type="submit" class="btn btn-primary">Voltar</button>
 </form>
     </center>
         
         </div>
-    </body>
+        </div>
+    
+         
+                    
+         </div>
+        
+         </body>
     
 
 </html>

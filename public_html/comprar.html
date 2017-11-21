@@ -1,35 +1,520 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--A ordem dos imports é de extrema importância e deve ser esta...-->
+
+        <!--Importar a biblioteca do jQuery-->
+        <script src="js/jquery-3.2.1.js"></script>
+
+        <!--Importar a biblioteca Popper-->
+        <script src="js/popper.js"></script>
+
+        <!--Importar a biblioteca do Bootstrap-->
+        <script src="js/bootstrap.js"></script>
+
+        <!--Importar o CSS do Bootstrap-->
+        <link rel="stylesheet" href="css/bootstrap.css" />
+
+        <!--imporat icons--> 
+        <script src="https://use.fontawesome.com/3072cce32b.js"></script>
+        <!--importar css-->
+        <link rel="stylesheet" type="text/css" href="estilo.css">
+
+
+
+        <style>
+
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            .h-box{
+                text-align: left;
+                width: 200px;
+                overflow: hidden;
+                float: left;
+                display: inline;
+                margin: 0 20px 10px 5px;
+                padding: 0 15px 0 15px;
+                border: 1px solid #333333;
+                -moz-border-radius: 8px;
+                -webkit-border-radius: 8px;
+                -khtml-border-radius: 8px;
+                border-radius: 8px;
+                min-height: 250px;
+                max-height: 250px;
+            }
+
+            div {
+                display: block;
+            }
+
+
+            element.style {
+            }
+
+            .h-img a img {
+                vertical-align: middle;
+            }
+
+
+            img {
+                border: 0;
+                text-align: right;
+            }
+
+            * {
+                padding: 0;
+                margin: 0;
+            }
+            img{
+                border-top-width: 0px;
+                border-right-width: 0px;
+                border-bottom-width: 0px;
+                border-left-width: 0px;
+                border-top-style: solid;
+                border-right-style: solid;
+                border-bottom-style: solid;
+                border-left-style: solid;
+                width: 145px;
+                height: 145px;
+                vertical-align: auto;
+
+
+            }
+
+            a:link {
+                text-decoration: none;
+                color: #555555;
+            }
+
+            a{
+                color: -webkit-link;
+                cursor: auto;
+                text-decoration: underline;
+            }
+
+            .h-img {
+                text-align: center;
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+
+            
+            .H-titulo {
+    font-family: 'Swis721';
+    font-size: 12px;
+    color: #05529c;
+    margin: 0 0 10px 0;
+}
+
+.H-titulo, .H-subtitulo, .H-descricao, .H-maisdeta {
+    letter-spacing: 0.3px;
+    line-height: 118%;
+    min-height: 55px;
+    max-height: 56px;
+}
+
+
+
+element.style {
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.H-subtitulo {
+    font-family: 'Swis721';
+    font-size: 12px;
+    color: #a2a2a2;
+        </style>
+
     </head>
-    <body>
-         <a class="nav-item nav-link text-success" href="index.html">Voltar</a>
-        
-        <div>COMPRAR</div>
-        <div>COMPRAR</div>
-        <div>COMPRAR</div>
-        <div>COMPRAR</div>
-        <div>COMPRAR</div>
-        <div>COMPRAR</div>
-        <div>COMPRAR</div>
-        <div>COMPRAR</div>
-        <div>COMPRAR</div>
-        <div>COMPRAR</div>
-        <div>COMPRAR</div>
-        <div>COMPRAR</div>
-        <div>COMPRAR</div>
-        <div>COMPRAR</div>
-        <div>COMPRAR</div><div>COMPRAR</div>
-        
-        
-        
+
+
+<body >
+
+
+        <div class="container" style="background-color: #e7e7e7">
+
+
+
+
+
+            <!--topo-->
+            <div class="container"> 
+
+                <nav class="navbar navbar-dark bg-dark">
+                    <a class="navbar-brand font-weight-bold text-success"   href="index.html">Beer House - Conveniência e Tabacaria</a>
+
+                    <!--<a class="nav-item nav-link active text-success" href="#">Acessorios <span class="sr-only">(current)</span></a>-->
+                    <div class="dropdown">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Meus pedidos
+                        </button>
+                        <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
+                            <h1>Arrumar</h1>
+                        </div>
+                    </div>
+
+
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+                    <!------------------------------------------------------------------------------------------------------------------------------------------------>
+                    <!--<a class="nav-item nav-link text-success" href="#">Essência</a>-->
+
+
+                    <div class="dropdown">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Minha Conta
+                        </button>
+                        <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
+                            <h1>Arrumar</h1>
+                        </div>
+                    </div>
+
+                    <!---------------------------------------------------------------------------------------------------------------------------->
+                    <a class="nav-item nav-link text-success" href="Cadastro.html">Contato</a>
+
+
+
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+
+                    </form>
+
+                </nav>
+
+
+                <!--<h4>Menu horizontal (navbar)</h4>-->
+            </div>
+
+
+
+
+            <div class="container"> <!-- Container de login --> 
+
+
+                <div class="dropdown">
+                    <button class="btn btn-outline-success my-2 my-sm-0 bg-dark" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Login
+                    </button>
+
+                    <div class="dropdown-menu bg-dark">
+                        <form class="px-4 py-3">
+                            <div class="form-group">
+                                <label class="text-success" for="exampleDropdownFormEmail1">Email</label>
+                                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label class="text-success" for="exampleDropdownFormPassword1">Senha</label>
+                                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label text-success">
+                                    <input type="checkbox" class=" form-check-input ">
+                                    Lembrar
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-outline-success my-2 my-sm-0" >Entrar</button>
+                        </form>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item text-success" href=Cadastro.html>Cadastrar</a>
+                        <a class="dropdown-item text-success" href="#">Esqueceu a senha?</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--------------------------------------------->
+            <hr>
+            <hr>
+            <!--conteudo-->
+
+
+            <div class="row">
+
+
+
+
+
+                <div class="col">
+
+                    <div class="dropdown ">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           Essência
+                        </button>
+                        <div class="dropdown-menu btn btn-outline-success my-2 my-sm-0" aria-labelledby="dropdownMenu2">
+                            <a class="dropdown-item bg-dark text-success" href="zomo.html">Zomo</a>
+                            <a class="dropdown-item bg-dark text-success" href="adalya.html">Adalya</a>
+                            <a class="dropdown-item bg-dark text-success" href="#">Mazaya</a>
+                            <a class="dropdown-item bg-dark text-success" href="#">Afzal</a>
+                            <a class="dropdown-item bg-dark text-success" href="#">Al Waha Gold</a>
+                            <a class="dropdown-item bg-dark text-success" href="#"></a>
+                            <a class="dropdown-item bg-dark text-success" href="#"></a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Acessórios
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                            <a class="dropdown-item bg-dark text-success" href="#">Rosh</a>
+                            <a class="dropdown-item bg-dark text-success" href="#">Abafador</a>
+                            <a class="dropdown-item bg-dark text-success" href="#">Pegador</a>
+                            <a class="dropdown-item bg-dark text-success" href="#">Mangueira</a>
+                            <a class="dropdown-item bg-dark text-success" href="#">Acebdedor</a>
+                            <a class="dropdown-item bg-dark text-success" href="#">Vaso</a>
+                        </div>
+                    </div>
+
+                    <!--<h4>categorias</h4>-->
+                </div>
+
+
+
+
+
+                <div class="col-10">
+ 
+                    <div class="row">
+                        
+                        <div class="col-3" >
+                                <div class="h-box" >
+                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Adalya/love.png" /> </a>
+
+                                    </div>
+                                    <div  style= "  height: 75%;" >
+                                        <span class="H-titulo">Adalya Love66</span> </br>
+                                        <!--DETALHES, DESCRIÇÃO-->
+                                        <div class="detalhes">
+                                            <a class="deta" href="teste.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        </div>
+
+                                        <span class="H-subtitulo">  <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3" >
+                                <div class="h-box" >
+                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Adalya/açai.png" /> </a>
+
+                                    </div>
+
+                                    <div  style= "  height: 75%;" >
+                                        <span class="H-titulo">Adalya Açai</span> </br>
+                                        <!--DETALHES, DESCRIÇÃO-->
+                                        <div class="detalhes">
+                                            <a class="deta" href="teste.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        </div>
+
+                                        <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3" >
+                                <div class="h-box" >
+                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Adalya/cherry.png" /> </a>
+
+                                    </div>
+                                    <div  style= "  height: 75%;" >
+                                        <span class="H-titulo">Adalya Chilly Cherry</span> </br>
+
+                                        <!--DETALHES, DESCRIÇÃO-->
+                                        <div class="detalhes">
+                                            <a class="deta" href="teste.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        </div>
+                                        <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3" >
+                                <div class="h-box" >
+                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Adalya/bonbon.png" /> </a>
+
+                                    </div>
+                                    <div  style= "  height: 75%;" >
+                                        <span class="H-titulo" >Adalya Swiss Bonbon</span> </br>
+
+                                        <!--DETALHES, DESCRIÇÃO-->
+                                        <div class="detalhes">
+                                            <a class="deta" href="teste.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        </div>
+                                        <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div> 
+                        <!-- IMAGEMS -->
+                        <div class="row" > <!-- IMAGEMS -->
+
+                            <div class="col-3" > <!-- IMAGEM -->
+                                <div class="h-box" >
+                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Adalya/cola orange.png" /> </a>
+
+                                    </div>
+                                    <div  style= "  height: 75%;" >
+                                        <span class="H-titulo">Adalya Cola-Orange</span> </br>
+
+                                        <!--DETALHES, DESCRIÇÃO-->
+                                        <div class="detalhes">
+                                            <a class="deta" href="teste.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        </div>
+                                        <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3" > <!-- IMAGEM -->
+                                <div class="h-box" >
+                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Adalya/ice.png" /> </a>
+
+                                    </div>
+                                    <div  style= "  height: 75%;" >
+                                        <span class="H-titulo">Adalya Ice Bonbon</span> </br>
+
+                                        <!--DETALHES, DESCRIÇÃO-->
+                                        <div class="detalhes">
+                                            <a class="deta" href="teste.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        </div>
+                                        <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3" > <!-- IMAGEM -->
+                                <div class="h-box" >
+                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Adalya/lemonpie.png" /> </a>
+
+                                    </div>
+                                    <div  style= "  height: 75%;" >
+                                        <span class="H-titulo">Adalya Lemon Pie</span> </br>
+
+                                        <!--DETALHES, DESCRIÇÃO-->
+                                        <div class="detalhes">
+                                            <a class="deta" href="teste.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        </div>
+                                        <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3" > <!-- IMAGEM -->
+                                <div class="h-box" >
+                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Adalya/maracuja.png" /> </a>
+
+                                    </div>
+                                    <div  style= "  height: 75%;" >
+                                        <span class="H-titulo">Adalya Maracuja </span> </br>
+                                        <!--DETALHES, DESCRIÇÃO-->
+                                        <div class="detalhes">
+                                            <a class="deta" href="teste.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        </div>
+
+                                        <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div> 
+                        
+                    </div>
+                    
+                </div> 
+                <hr>
+                <!--------------------------------------------->
+
+
+
+                <hr>
+                <hr>
+                <!--rodapé-->
+                <div class="container"> 
+                    <hr>
+                <div class="row" >
+
+                    <div class="col">
+                        <!--<h4>Departamentos</h4>-->
+                        <h6 class=" text-secondary" style="font-size: 15px"> Atendimento </h6>
+
+                        <ul class="list-unstyled text-secondary">
+                            <h6>De segunda à sexta. Das 15h às 22h </h6>
+                            <h5 style=" font-size: 17px; ">Telefones</h5>
+                            <li>(43) 9 8404-4138 </li>
+                            <li>(44) 9 9857-4562 </li>
+
+
+                        </ul>
+
+                        <hr>
+                        <h6 class=" text-secondary" style="font-size: 15px; " > Endereço </h6>
+
+                        <ul class="list-unstyled text-secondary" >
+                            <li>Av. Brasil</li>
+                            <li>Nº 1880</li>
+                            <li>CEP: 87660-000</li>
+                            <li>Paranacity - PR</li>
+
+
+                        </ul>
+                    </div>
+
+                    <div class="col list-group" style="text-align: center">
+                        <!--<h4>Minha Conta</h4>-->
+                        <!--<a href="#" class="btn btn-success">Login</a>-->
+                        <h6 class=" text-secondary" style="font-size: 16px" > Rede social </h6>
+
+
+                        <a class="fa fa-facebook-square text-secondary" 
+                           style="text-decoration: none; line-height: 2.0; center" href="#" > Facebook </a> 
+
+                        <a  class="fa fa-twitter-square text-secondary" 
+                            style="text-decoration: none; line-height: 2.0; center" href="#"  >Twitter </a> 
+
+                        <a   class="fa fa-instagram list-unstyled text-secondary"  
+                             style="text-decoration: none; line-height: 2.5; center" href="#" > Instagram </a> 
+
+                    </div>
+
+                   
+
+                    <div class="col">
+                        <h6 class=" text-secondary" style="font-size: 15px; " > Pagamentos </h6>
+                        <img src="img/credd.png"/> 
+                        
+                    </div>
+
+
+                </div>
+                </div>
+
+                <!--------------------------------------------->
+
+            </div>
+            <h6 class="fa fa-copyright text-secondary text-center" aria-hidden="true"  style="font-size: 12px; 
+                position:relative;
+                bottom:0; 
+                width:100%;
+                margin-top: 10px; "> Copyright 2017 - Fernando Bento - Todos os direitos reservados</h6>
+
+
+
     </body>
 </html>
