@@ -110,7 +110,8 @@
                 font-size: 12px;
                 color: #05529c;
                 margin: 0 0 10px 30px;
-                left: 15%
+                left: 15%;
+                text-align: center;
             }
 
             .H-titulo, .H-subtitulo, .H-descricao, .H-maisdeta {
@@ -147,28 +148,51 @@
 
 
                 }
-                
-                
+
+
                 .carrinho{
-                    
+
                     float: right;
                     width: 50%;
-                    
+
                 }
                 #btn {
                     width: 50px;
                     height: 100px;
-                    
+
                 }
+                
+                
+                
+                
+    .div-img-carousel, .item.active {
+        overflow: hidden;
+        width: 700px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .carousel-inner {
+        width: 40%;
+    }
+
+    #meuSlider {
+        width: 700px;
+        height: 400px;
+    }
+
+
+                
+    
             </style>
 
         </head>
 
 
-        <body >
+        <body style="background-color: #333333">
 
 
-            <div class="container" style="background-color: #e7e7e7">
+                <div class="container" style="background-color: #e7e7e7">
 
 
 
@@ -228,159 +252,228 @@
 
                     <div class="container-fluid"  >
                         <div class="col"  > 
-                        <div  class="row" >
-                            <div style=" padding-left: 975px ;float: right;  "> 
+                            <div  class="row" >
+                                <div style=" padding-left: 975px ;float: right;  "> 
                                 <a href="comprar.html" /> <img style="width: 110px; height: 40px; float: right; " src="img/meucarrinho.png" />  </a>
-                        
-                        </div>
-                        </div>
-                    </div>
-                    
-                    </div>
-                    
-                    
 
-
-                    <div class="container"> <!-- Container de login --> 
-
-
-                        <div  class="dropdown">
-                            <button   class="btn btn-outline-success my-2 my-sm-0 bg-dark" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Login
-                            </button>
-
-                            <div class="dropdown-menu bg-dark">
-                                <form class="px-4 py-3">
-                                    <div class="form-group">
-                                        <label class="text-success" for="exampleDropdownFormEmail1">Email</label>
-                                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="text-success" for="exampleDropdownFormPassword1">Senha</label>
-                                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label text-success">
-                                            <input type="checkbox" class=" form-check-input ">
-                                            Lembrar
-                                        </label>
-                                    </div>
-                                    <button type="submit" class="btn btn-outline-success my-2 my-sm-0" >Entrar</button>
-                                </form>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item text-success" href=Cadastro.html>Cadastrar</a>
-                                <a class="dropdown-item text-success" href="#">Esqueceu a senha?</a>
                             </div>
                         </div>
                     </div>
 
-                    <!--------------------------------------------->
-                    <hr>
-                    <hr>
-                    <!--conteudo-->
-
-
-                    <div class="row">
+                </div>
 
 
 
 
+                <div class="container"> <!-- Container de login --> 
 
-                        <div class="col">
+
+                    <div  class="dropdown">
+                        <button   class="btn btn-outline-success my-2 my-sm-0 bg-dark" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Login
+                        </button>
+
+                        <div class="dropdown-menu bg-dark">
+                            <form class="px-4 py-3">
+                                <div class="form-group">
+                                    <label class="text-success" for="exampleDropdownFormEmail1">Email</label>
+                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                                </div>
+                                <div class="form-group">
+                                    <label class="text-success" for="exampleDropdownFormPassword1">Senha</label>
+                                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label text-success">
+                                        <input type="checkbox" class=" form-check-input ">
+                                        Lembrar
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-outline-success my-2 my-sm-0" >Entrar</button>
+                            </form>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-success" href=Cadastro.html>Cadastrar</a>
+                            <a class="dropdown-item text-success" href="#">Esqueceu a senha?</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--------------------------------------------->
+                <hr>
+
+
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 1080px;
+                    height: 300px;">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                        
+                    </ol>
+                    <div class="carousel-inner" >
+                        <div class="carousel-item active">
+                            <a href="https://web.facebook.com/events/500069440364164/">  <img style="width: 1080px;
+                                                                                              height: 300px;" class="d-block w-100" src="img/evento.png" alt="First slide"> </a>
+                        </div>
+                        
+                        
+                        <div class="carousel-item">
+                            <img style="width: 1080px;
+                                 height: 300px;" class="d-block w-100" src="img/hookah.png" alt="Second slide">
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img style="width: 1080px;
+                                 height: 300px;" class="d-block w-100" src="img/carvao.png" alt="Third slide">
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img style="width: 1080px;
+                                 height: 300px;" class="d-block w-100" src="img/banner zomo.png" alt=" fourth slide">
+                        </div>
+                        
+                        <div class="carousel-item">
+                            <img style="width: 1080px;
+                                 height: 300px;" class="d-block w-100" src="img/banner06.png" alt="fifth slide">
+                        </div>
+                        
+                        
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+
+
+
+
+
+
+
+                <hr>
+
+
+
+
+
+
+
+
+
+
+
+                <!--conteudo-->
+
+
+                <div class="row">
+
+
+
+
+
+                    <div class="col">
+
+                        <div class="dropdown ">
+                            <button style="height: 40px; width: 100px; " class="btn btn-outline-success my-2 my-sm-0" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Essência
+                            </button>
+                            <div class="dropdown-menu btn btn-outline-success my-2 my-sm-0" aria-labelledby="dropdownMenu2">
+                                <a class="dropdown-item bg-dark text-success" href="zomo.html">Zomo</a>
+                                <a class="dropdown-item bg-dark text-success" href="adalya.html">Adalya</a>
+                                <a class="dropdown-item bg-dark text-success" href="#">Mazaya</a>
+                                <a class="dropdown-item bg-dark text-success" href="#">Afzal</a>
+                                <a class="dropdown-item bg-dark text-success" href="#">Al Waha Gold</a>
+                                <a class="dropdown-item bg-dark text-success" href="#"></a>
+                                <a class="dropdown-item bg-dark text-success" href="#"></a>
+                            </div>
+                        </div>
+
+                        <div class="dropdown">
 
                             <div class="dropdown ">
-                                <button style="height: 40px; width: 100px; " class="btn btn-outline-success my-2 my-sm-0" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Essência
-                                </button>
-                                <div class="dropdown-menu btn btn-outline-success my-2 my-sm-0" aria-labelledby="dropdownMenu2">
-                                    <a class="dropdown-item bg-dark text-success" href="zomo.html">Zomo</a>
-                                    <a class="dropdown-item bg-dark text-success" href="adalya.html">Adalya</a>
-                                    <a class="dropdown-item bg-dark text-success" href="#">Mazaya</a>
-                                    <a class="dropdown-item bg-dark text-success" href="#">Afzal</a>
-                                    <a class="dropdown-item bg-dark text-success" href="#">Al Waha Gold</a>
-                                    <a class="dropdown-item bg-dark text-success" href="#"></a>
-                                    <a class="dropdown-item bg-dark text-success" href="#"></a>
-                                </div>
-                            </div>
-
-                            <div class="dropdown">
-                                
-                                <div class="dropdown ">
                                 <button  style="height: 40px; width: 100px; " class="btn btn-outline-success my-2 my-sm-0" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Rosh
                                 </button>
                                 <div class="dropdown-menu btn btn-outline-success my-2 my-sm-0" aria-labelledby="dropdownMenu2">
-                                    
+
                                 </div>
                             </div>
-                                <div class="dropdown ">
-                                    <button style="height: 40px; width: 100px; " class="btn btn-outline-success my-2 my-sm-0" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="dropdown ">
+                                <button style="height: 40px; width: 100px; " class="btn btn-outline-success my-2 my-sm-0" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Steam
                                 </button>
-                                    <div  class="dropdown-menu btn btn-outline-success my-2 my-sm-0" aria-labelledby="dropdownMenu2">
-                                    
+                                <div  class="dropdown-menu btn btn-outline-success my-2 my-sm-0" aria-labelledby="dropdownMenu2">
+
                                 </div>
                             </div>
-                                <div class="dropdown ">
+                            <div class="dropdown ">
                                 <button style="height: 40px; width: 100px; " class="btn btn-outline-success my-2 my-sm-0" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Prato
                                 </button>
                                 <div class="dropdown-menu btn btn-outline-success my-2 my-sm-0" aria-labelledby="dropdownMenu2">
-                                    
+
                                 </div>
                             </div>
-                                <div class="dropdown ">
+                            <div class="dropdown ">
                                 <button style="height: 40px; width: 100px; " class="btn btn-outline-success my-2 my-sm-0" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Mangueira
                                 </button>
                                 <div class="dropdown-menu btn btn-outline-success my-2 my-sm-0" aria-labelledby="dropdownMenu2">
-                                    
+
                                 </div>
                             </div>
-                                <div class="dropdown ">
+                            <div class="dropdown ">
                                 <button style="height: 40px; width: 100px; " class="btn btn-outline-success my-2 my-sm-0" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Vaso
                                 </button>
                                 <div class="dropdown-menu btn btn-outline-success my-2 my-sm-0" aria-labelledby="dropdownMenu2">
-                                    
+
                                 </div>
                             </div>
-                                <div class="dropdown ">
+                            <div class="dropdown ">
                                 <button style="height: 40px; width: 100px; " class="btn btn-outline-success my-2 my-sm-0" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Pegador
                                 </button>
                                 <div class="dropdown-menu btn btn-outline-success my-2 my-sm-0" aria-labelledby="dropdownMenu2">
-                                    
+
                                 </div>
                             </div>
-                                <div class="dropdown ">
+                            <div class="dropdown ">
                                 <button style="height: 40px; width: 100px; " class="btn btn-outline-success my-2 my-sm-0" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Acendedor
                                 </button>
                                 <div class="dropdown-menu btn btn-outline-success my-2 my-sm-0" aria-labelledby="dropdownMenu2">
-                                    
+
                                 </div>
                             </div>
-                            </div>
-
-                            <!--<h4>categorias</h4>-->
                         </div>
 
+                        <!--<h4>categorias</h4>-->
+                    </div>
 
 
 
 
-                        <div class="col-10">
 
-                            <div class="row" >
+                    <div class="col-10">
 
-                                <div class="col-3" >
-                                    <div class="h-box" >
-                                        <div class="h-img" > <a href="teste.html">  <img  src="img/Zomo/zomo black.jpg" /> </a>
+                        <div class="row" >
 
-                                        </div>
+                            <div class="col-3" >
+                                <div class="h-box" >
+                                    <div class="h-img" > <a href="Descricao.html">  <img  src="img/Zomo/zomo black.jpg" /> </a>
 
-                                        <div  style= "  height: 75%;" >
+                                    </div>
+
+                                    <div  style= "  height: 75%;" >
                                         <span class="H-titulo">Zomo Black </span> </br>
 
 
@@ -389,14 +482,19 @@
 
                                     <!--DETALHES, DESCRIÇÃO-->
                                     <div class="detalhes">
-                                        <a class="deta" href="teste.html"/>  <img   
+                                        <a class="deta" href="Descricao.html"/>  <img   
                                             style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                        
+                                        
                                     </div>
                                 </div>
                             </div>
                             <div class="col-3" >
                                 <div class="h-box" >
-                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Zomo/alpis.png" /> </a>
+                                    <div class="h-img" > <a href="Descricao.html">  <img  src="img/Zomo/alpis.png" /> </a>
 
                                     </div>
                                     <div  style= "  height: 75%;" >
@@ -404,25 +502,35 @@
 
                                         <!--DETALHES, DESCRIÇÃO-->
                                         <div class="detalhes">
-                                            <a class="deta" href="teste.html"/>  <img   
-                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
-                                        </div>
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                        
+                                        
+                                    </div>
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-3" >
                                 <div class="h-box" >
-                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Zomo/style.PNG" /> </a>
+                                    <div class="h-img" > <a href="Descricao.html">  <img  src="img/Zomo/style.PNG" /> </a>
 
                                     </div>
                                     <div  style= "  height: 75%;" >
                                         <span class="H-titulo">Zomo Havana Style </span> </br>
                                         <!--DETALHES, DESCRIÇÃO-->
                                         <div class="detalhes">
-                                            <a class="deta" href="teste.html"/>  <img   
-                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
-                                        </div>
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                        
+                                        
+                                    </div>
 
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
@@ -430,16 +538,21 @@
                             </div>
                             <div class="col-3" >
                                 <div class="h-box" >
-                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Zomo/mint.png" /> </a>
+                                    <div class="h-img" > <a href="Descricao.html">  <img  src="img/Zomo/mint.png" /> </a>
 
                                     </div>
                                     <div  style= "  height: 75%;" >
                                         <span class="H-titulo">Zomo Strong Mint  </span> </br>
                                         <!--DETALHES, DESCRIÇÃO-->
-                                        <div class="detalhes">
-                                            <a class="deta" href="teste.html"/>  <img   
-                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
-                                        </div>
+                                       <div class="detalhes">
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                        
+                                        
+                                    </div>
 
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
@@ -452,16 +565,21 @@
 
                             <div class="col-3" > <!-- IMAGEM -->
                                 <div class="h-box" >
-                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Zomo/blue caribean.jpg" /> </a>
+                                    <div class="h-img" > <a href="Descricao.html">  <img  src="img/Zomo/blue caribean.jpg" /> </a>
 
                                     </div>
                                     <div  style= "  height: 75%;" >
                                         <span class="H-titulo">Zomo Blue Caribean </span> </br>
                                         <!--DETALHES, DESCRIÇÃO-->
-                                        <div class="detalhes">
-                                            <a class="deta" href="teste.html"/>  <img   
-                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
-                                        </div>
+                                       <div class="detalhes">
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                        
+                                        
+                                    </div>
 
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
@@ -469,33 +587,43 @@
                             </div>
                             <div class="col-3" > <!-- IMAGEM -->
                                 <div class="h-box" >
-                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Zomo/kiwi lemon.jpg" /> </a>
+                                    <div class="h-img" > <a href="Descricao.html">  <img  src="img/Zomo/kiwi lemon.jpg" /> </a>
 
                                     </div>
                                     <div  style= "  height: 75%;" >
                                         <span class="H-titulo">Zomo Kiwi Lemon </span> </br>
 
                                         <!--DETALHES, DESCRIÇÃO-->
-                                        <div class="detalhes">
-                                            <a class="deta" href="teste.html"/>  <img   
-                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
-                                        </div>
+                                       <div class="detalhes">
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                        
+                                        
+                                    </div>
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-3" > <!-- IMAGEM -->
                                 <div class="h-box" >
-                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Zomo/passion fruit.jpg" /> </a>
+                                    <div class="h-img" > <a href="Descricao.html">  <img  src="img/Zomo/passion fruit.jpg" /> </a>
 
                                     </div>
                                     <div  style= "  height: 75%;" >
                                         <span class="H-titulo">Zomo Passion Fruit </span> </br>
                                         <!--DETALHES, DESCRIÇÃO-->
-                                        <div class="detalhes">
-                                            <a class="deta" href="teste.html"/>  <img   
-                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
-                                        </div>
+                                       <div class="detalhes">
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                        
+                                        
+                                    </div>
 
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
@@ -503,42 +631,52 @@
                             </div>
                             <div class="col-3" > <!-- IMAGEM -->
                                 <div class="h-box" >
-                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Zomo/splash lemon.jpg" /> </a>
+                                    <div class="h-img" > <a href="Descricao.html">  <img  src="img/Zomo/splash lemon.jpg" /> </a>
 
                                     </div>
                                     <div  style= "  height: 75%;" >
                                         <span class="H-titulo">Zomo Splash Lemon </span> </br>
                                         <!--DETALHES, DESCRIÇÃO-->
-                                        <div class="detalhes">
-                                            <a class="deta" href="teste.html"/>  <img   
-                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
-                                        </div>
+                                       <div class="detalhes">
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                        
+                                        
+                                    </div>
 
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
 
                                 </div>
                             </div>
-                            
-                            
-                            
+
+
+
                             <!------------------------------------------------------------------------------------------------------------->
 
-<!------------------------------------------------------------------------------------------------------------->
-<!---------------------------------------------ADALYA-->
-                            
+                            <!------------------------------------------------------------------------------------------------------------->
+                            <!---------------------------------------------ADALYA-->
+
                             <div class="col-3" >
                                 <div class="h-box" >
-                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Adalya/love.png" /> </a>
+                                    <div class="h-img" > <a href="Descricao.html">  <img  src="img/Adalya/love.png" /> </a>
 
                                     </div>
                                     <div  style= "  height: 75%;" >
                                         <span class="H-titulo">Adalya Love66</span> </br>
                                         <!--DETALHES, DESCRIÇÃO-->
                                         <div class="detalhes">
-                                            <a class="deta" href="teste.html"/>  <img   
-                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
-                                        </div>
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                        
+                                        
+                                    </div>
 
                                         <span class="H-subtitulo">  <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
@@ -546,17 +684,22 @@
                             </div>
                             <div class="col-3" >
                                 <div class="h-box" >
-                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Adalya/açai.png" /> </a>
+                                    <div class="h-img" > <a href="Descricao.html">  <img  src="img/Adalya/açai.png" /> </a>
 
                                     </div>
 
                                     <div  style= "  height: 75%;" >
                                         <span class="H-titulo">Adalya Açai</span> </br>
                                         <!--DETALHES, DESCRIÇÃO-->
-                                        <div class="detalhes">
-                                            <a class="deta" href="teste.html"/>  <img   
-                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
-                                        </div>
+                                       <div class="detalhes">
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                        
+                                        
+                                    </div>
 
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
@@ -564,7 +707,7 @@
                             </div>
                             <div class="col-3" >
                                 <div class="h-box" >
-                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Adalya/cherry.png" /> </a>
+                                    <div class="h-img" > <a href="Descricao.html">  <img  src="img/Adalya/cherry.png" /> </a>
 
                                     </div>
                                     <div  style= "  height: 75%;" >
@@ -572,16 +715,21 @@
 
                                         <!--DETALHES, DESCRIÇÃO-->
                                         <div class="detalhes">
-                                            <a class="deta" href="teste.html"/>  <img   
-                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
-                                        </div>
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                        
+                                        
+                                    </div>
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-3" >
                                 <div class="h-box" >
-                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Adalya/bonbon.png" /> </a>
+                                    <div class="h-img" > <a href="Descricao.html">  <img  src="img/Adalya/bonbon.png" /> </a>
 
                                     </div>
                                     <div  style= "  height: 75%;" >
@@ -589,9 +737,14 @@
 
                                         <!--DETALHES, DESCRIÇÃO-->
                                         <div class="detalhes">
-                                            <a class="deta" href="teste.html"/>  <img   
-                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
-                                        </div>
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                        
+                                        
+                                    </div>
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
                                 </div>
@@ -604,41 +757,51 @@
 
                             <div class="col-3" > <!-- IMAGEM -->
                                 <div class="h-box" >
-                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Adalya/cola orange.png" /> </a>
+                                    <div class="h-img" > <a href="Descricao.html">  <img  src="img/Adalya/cola orange.png" /> </a>
 
                                     </div>
                                     <div  style= "  height: 75%;" >
                                         <span class="H-titulo">Adalya Cola-Orange</span> </br>
 
                                         <!--DETALHES, DESCRIÇÃO-->
-                                        <div class="detalhes">
-                                            <a class="deta" href="teste.html"/>  <img   
-                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
-                                        </div>
+                                       <div class="detalhes">
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                        
+                                        
+                                    </div>
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-3" > <!-- IMAGEM -->
                                 <div class="h-box" >
-                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Adalya/ice.png" /> </a>
+                                    <div class="h-img" > <a href="Descricao.html">  <img  src="img/Adalya/ice.png" /> </a>
 
                                     </div>
                                     <div  style= "  height: 75%;" >
                                         <span class="H-titulo">Adalya Ice Bonbon</span> </br>
 
                                         <!--DETALHES, DESCRIÇÃO-->
-                                        <div class="detalhes">
-                                            <a class="deta" href="teste.html"/>  <img   
-                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
-                                        </div>
+                                      <div class="detalhes">
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                        
+                                        
+                                    </div>
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-3" > <!-- IMAGEM -->
                                 <div class="h-box" >
-                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Adalya/lemonpie.png" /> </a>
+                                    <div class="h-img" > <a href="Descricao.html">  <img  src="img/Adalya/lemonpie.png" /> </a>
 
                                     </div>
                                     <div  style= "  height: 75%;" >
@@ -646,26 +809,35 @@
 
                                         <!--DETALHES, DESCRIÇÃO-->
                                         <div class="detalhes">
-                                            <a class="deta" href="teste.html"/>  <img   
-                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
-                                        </div>
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                        
+                                        
+                                    </div>
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-3" > <!-- IMAGEM -->
                                 <div class="h-box" >
-                                    <div class="h-img" > <a href="teste.html">  <img  src="img/Adalya/maracuja.png" /> </a>
+                                    <div class="h-img" > <a href="Descricao.html">  <img  src="img/Adalya/maracuja.png" /> </a>
 
                                     </div>
                                     <div  style= "  height: 75%;" >
                                         <span class="H-titulo">Adalya Maracuja </span> </br>
                                         <!--DETALHES, DESCRIÇÃO-->
-                                        <div class="detalhes">
-                                            <a class="deta" href="teste.html"/>  <img   
-                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
-                                        </div>
-
+                                       <div class="detalhes">
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        
+                                        <a class="deta" href="Descricao.html"/>  <img   
+                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                        
+                                        
+                                    </div>
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
                                 </div>
@@ -734,7 +906,7 @@
 
                             <div class="col">
                                 <h6 class=" text-secondary fa fa-cart-plus" style="font-size: 15px; " > Formas de pagamento </h6>
-                                
+
                                 <img   style="width: 300px; height: 200px;" src="img/credd.png"/> 
                             </div>
 

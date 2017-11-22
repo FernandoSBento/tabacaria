@@ -34,19 +34,19 @@
             }
             .h-box{
                 text-align: left;
-                width: 900px;
+                width: 200px;
                 overflow: hidden;
                 float: left;
                 display: inline;
-                margin: 0 0px 10px 1px;
+                margin: 0 20px 10px 5px;
                 padding: 0 15px 0 15px;
                 border: 1px solid #333333;
                 -moz-border-radius: 8px;
                 -webkit-border-radius: 8px;
                 -khtml-border-radius: 8px;
                 border-radius: 8px;
-                min-height: 100px;
-                max-height: 100px;
+                min-height: 250px;
+                max-height: 250px;
             }
 
             div {
@@ -143,123 +143,10 @@
 
         </style>
 
-        <script>
-
-            function AumentaPerc() {
-
-                var campo = document.getElementById("percentual")
-
-                campo.value = parseInt(campo.value) + 1;
-
-            }
-
-            function DiminuiPerc() {
-
-                var campo = document.getElementById("percentual")
-
-                campo.value = parseInt(campo.value) + 1;
-
-            }
-
-
-            function ajax()
-            {
-                try {
-                    return new ActiveXObject("Microsoft.XMLHTTP");
-                } catch (e) {
-                    try {
-                        return new ActiveXObject("Msxml2.XMLHTTP");
-                    } catch (ex) {
-                        try {
-                            return new XMLHttpRequest();
-                        } catch (exc) {
-                            alert("Esse browser não tem recursos para uso do AJAX");
-                            return false;
-                        }
-                    }
-                }
-            }
-
-// Script para a realização da Busca Instantanêa com Ajax
-// Função para iniciar o Ajax no browser do cliente
-
-            function openAjax() {
-
-                var ajax;
-
-                try {
-                    // XMLHttpRequest para browsers decentes, como: Firefox, Safari, dentre outros.
-                    ajax = new XMLHttpRequest();
-                } catch (ee) {
-                    try {
-                        // Para o IE da MS
-                        ajax = new ActiveXObject("Msxml2.XMLHTTP");
-                    } catch (e) {
-                        try {
-                            // Para o IE da MS
-                            ajax = new ActiveXObject("Microsoft.XMLHTTP");
-                        } catch (E) {
-                            ajax = false;
-                        }
-                    }
-                }
-                return ajax;
-            }
-
-// Função que realiza a busca instantânea e posiciona em uma div na página principal
-            function calculoFrete() {
-                if (document.getElementById) { // Para os browsers complacentes com o DOM W3C.
-
-
-                    var cepOrigem = document.getElementById('cepOrigem').value;
-                    var cepDestino = document.getElementById('cepDestino').value;
-                    var peso = document.getElementById('peso').value;
-                    // div que exibirá o resultado da busca.
-                    var exibeResultado = document.getElementById('result');
-
-                    // Verifica se o campo não está vazio, ou se foi digitado no mínimo nove caracteres.
-                    if (cepOrigem !== "" && cepOrigem !== null && cepOrigem.length >= 9) {
-
-                        // Inicia o Ajax.
-                        var ajax = openAjax();
-
-                        var URL = "cupons submarino http://developers.agenciaideias.com.br/correios/frete/json/" + cepOrigem + "&cepDestino=" + cepDestino + "&peso=" + peso;
-                        ajax.open("GET", URL, true);
-
-                        ajax.onreadystatechange = function () {
-                            // Quando estiver carregando, exibe: carregando...
-                            if (ajax.readyState == 1) {
-                                exibeResultado.innerHTML = "<span class='texto'>Calculando Frete...</span>";
-                            }
-                            // Quando estiver tudo pronto.
-                            if (ajax.readyState == 4) {
-                                if (ajax.status == 200) {
-                                    var resultado = ajax.responseText;
-                                    // Coloca o resultado (da busca) retornado pelo Ajax nessa variável (var resultado).
-                                    // Resolve o problema dos acentos (saiba mais aqui: http://www.plugsites.net/leandro/?p=4)
-                                    resultado = resultado.replace(/\+/g, " ");
-                                    // Resolve o problema dos acentos
-                                    resultado = unescape(resultado);
-                                    exibeResultado.innerHTML = resultado;
-                                } else {
-                                    exibeResultado.innerHTML = "<span class='text'>Erro realizando busca instantânea</span> ";
-                                }
-                            }
-                        }
-                        // submete
-                        ajax.send(null);
-                    }
-                }
-            }
-
-
-        </script>
+       
 
     </head>
 
-    <!-- Arquivos JS que fazem parte do script !-->
-    <script language="javascript" src="js/ajax.js"></script>
-    <script language="javascript" src="js/calculoFrete.js"></script>
 
 
     <body style="background-color: #333333">
@@ -365,62 +252,99 @@
 
             <div class="row">
                 <!--imagem-->
-                <div class="col">
+                <div class="col"> 
 
-                    <div class="h-box" style="width: 600px; height: 150px" >
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 400px;
+                         height: 300px;">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
 
-                        <div >  <h6>Produto</h6>
-                            <img style="width: 400px; height: 70px; position: relative" src="img/zomo compra.png"/> <h4>asdasd</h4>
+                        </ol>
+                        <div class="carousel-inner" >
+                            <div class="carousel-item active">
+                                <img style="width: 400px;
+                                     height: 300px;" class="d-block w-100" src="img/descricao/5.png" alt="First slide">
+                            </div>
 
+
+                            <div class="carousel-item">
+                                <img style="width: 400px;
+                                     height: 300px;" class="d-block w-100" src="img/descricao/15625314_1724006494581727_7761628695604756480_n.jpg" alt="Second slide">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img style="width: 400px;
+                                     height: 300px;" class="d-block w-100" src="img/descricao/2.jpg" alt="Third slide">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img style="width: 400px;
+                                     height: 300px;" class="d-block w-100" src="img/descricao/3.jpg" alt=" fourth slide">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img style="width: 400px;
+                                     height: 300px;" class="d-block w-100" src="img/descricao/4.png" alt="fifth slide">
+                            </div>
 
 
                         </div>
-
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
 
 
-                    <div class="h-box" style="width: 100px; height: 150px" >
-
-                        <div style="text-align: center" >
-                            <h6>Qtde</h6> <br>
-
-                            <h5 style="font-size: 18px; text-align: center;">3</h5>
-
-
-                        </div>
-
-                    </div>
-
-                    <div class="h-box" style="width: 130px; height: 150px" >
-
-                        <div >
-                            <h6>Valor Unit.</h6> <br>
-                            <h5 style="font-size: 18px; text-align: center;">R$ 10,00</h5>
-
-                        </div>
-
-                    </div>
-                    <div class="h-box" style="width: 130px; height: 150px" >
-
-                        <div >
-                            <h6>Valor Total</h6><br>
-                            <h5 style="font-size: 18px; text-align: center">R$ 30,00</h5>
-
-                        </div>
-
-                    </div>
 
                 </div>
 
 
+                <div class="col"> 
+                    <h1> Essência Zomo Black</h1>
+                    <h6>Essencia Zomo Black 50g  <a href="#desc" > Saiba mais </a> </h6>
+                    <h6>R$ 12,00</h6>
 
+
+
+                    <h6>Tipo de embalagem</h6>
+                    <form method="post" action="cadastrar-enquete.php">
+                        <select name="time">
+                            <option value="bota">Escolha</option>
+                            <option value="bota">50g</option>
+                            <option value="fla">500g</option>
+                            <option value="flu">6kg</option>
+
+                        </select>
+
+                    </form>
+
+
+                    <h6>Quantidade</h6>
+                    <button  onClick="AumentaPerc();">+</button>
+                    <input style="height: 35px; width: 35px" type='number' id="percentual" name="percentual" />
+                    <button onClick="DiminuiPerc();">-</button>
+                    <br/>
+
+
+                    <a href="comprar.html" > <img src="img/com.png"/> </a>
+
+                </div>
 
             </div> 
 
             <div class="row">
 
                 <!--FRETE-->
-                <div class="col-4" > 
+                <div class="col" > 
                     <h6>Calcular Frete</h6>
 
                     <form method="get" action="">
@@ -428,7 +352,7 @@
                             <tr>
                                 <td width="408">
                                     CEP Destino: 
-                                    <input name="cepDestino" type="text" id="cepDestino">
+                                    <input name="cepDestino" type="number" id="cepDestino">
                                     <input name="postok" type="button" id="postok" value="Calcular" onClick="calculoFrete();">
                                     <input name="cepOrigem" type="hidden" id="cepOrigem" value="86975-000">
                                     <input name="peso" type="hidden" id="peso" value="10"></td>
@@ -439,38 +363,40 @@
 
                 </div>
 
-            
+            </div>
             <hr>
-            <div class="col" style="float: left">
+            <div class="row">
                 <!--FORMAS DE ENTREGA-->
-                <div class="col"> <H6 style="text-align: center" id="desc"> Pagamento</H6>
-                    
-                    <div class="h-box" style="width: 200px; height: 500px; float: left" >
+                <div class="col"> <H6 style="text-align: center" id="desc"> DESCRIÇÃO</H6>
+                    <p style="text-align: "> Uma essência pensada para os paladares mais exigentes. Assim é a nova essência Black Edition, da linha Buzz Line. Armazenada durante 6 meses em barris, o sabor do tabaco intenso unido à uma menta diferente de tudo o que você já viu, trazem aromas amadeirados e sabores acentuados. Um sabor totalmente diferenciado.
 
-                       
+                        Experimente essa novidade, uma linha limitada e somente para os mais exigentes.
 
-                    </div>
-                    
-                
+                        As Essências Zomo vem em embalagens de 50g, 500g e 6Kg. </p>
                 </div>
                 <!--VALORES-->
+              
 
 
 
-
-            </div>
             </div> 
             <hr>
-            
+            <div class="row">
+                <div class="col">
+                    <h6 style="text-align: center">AVALIAÇÃO DO PRODUTO</h6> 
+
+                    <p>Este produto ainda não recebeu avaliações de clientes. </p>
+                </div>                    
+            </div>
             <hr>
             <!--------------------------------------------->
 
 
 
-
+            
             <!--rodapé-->
             <div class="container"> 
-
+                
                 <div class="row" >
 
                     <div class="col">
@@ -518,11 +444,11 @@
 
 
 
-                    <div class="col">
-                        <h6 class=" text-secondary fa fa-cart-plus" style="font-size: 15px; " > Formas de pagamento </h6>
+                   <div class="col">
+                                <h6 class=" text-secondary fa fa-cart-plus" style="font-size: 15px; " > Formas de pagamento </h6>
 
-                        <img   style="width: 300px; height: 200px;" src="img/credd.png"/> 
-                    </div>
+                                <img   style="width: 300px; height: 200px;" src="img/credd.png"/> 
+                            </div>
 
                 </div>
 
@@ -530,7 +456,7 @@
 
             <!--------------------------------------------->
 
-        </div>
+        
         <h6 class="fa fa-copyright text-secondary text-center" aria-hidden="true"  style="font-size: 12px; 
             position:relative;
             bottom:0; 
