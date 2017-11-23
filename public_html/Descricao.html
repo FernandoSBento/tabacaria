@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Descrição</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -143,7 +143,7 @@
 
         </style>
 
-       
+
 
     </head>
 
@@ -164,15 +164,10 @@
                     <a class="navbar-brand font-weight-bold text-success"   href="index.html">Beer House - Conveniência e Tabacaria</a>
 
                     <!--<a class="nav-item nav-link active text-success" href="#">Acessorios <span class="sr-only">(current)</span></a>-->
-                    <div class="dropdown">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Meus pedidos
-                        </button>
-                        <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
-                            <h1>Arrumar</h1>
-                        </div>
-                    </div>
 
+
+
+                    <a class="nav-item nav-link text-success" href="#">Minha Conta</a>
 
 
                     <!------------------------------------------------------------------------------------------------------------------------------------------------>
@@ -181,18 +176,9 @@
                     <!------------------------------------------------------------------------------------------------------------------------------------------------>
                     <!--<a class="nav-item nav-link text-success" href="#">Essência</a>-->
 
-
-                    <div class="dropdown">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Minha Conta
-                        </button>
-                        <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
-                            <h1>Arrumar</h1>
-                        </div>
-                    </div>
-
+                    <a class="nav-item nav-link text-success" href="carrinho.html">Meu Carrinho</a>
                     <!---------------------------------------------------------------------------------------------------------------------------->
-                    <a class="nav-item nav-link text-success" href="Cadastro.html">Contato</a>
+                    <a class="nav-item nav-link text-success" href="#fim">Contato</a>
 
 
 
@@ -312,6 +298,8 @@
                     <h1> Essência Zomo Black</h1>
                     <h6>Essencia Zomo Black 50g  <a href="#desc" > Saiba mais </a> </h6>
                     <h6>R$ 12,00</h6>
+                    <h6>Compras acima R$ 50,00 parcelamos em até 4x</h6>
+                    <h6>10% de desconto no boleto</h6
 
 
 
@@ -329,37 +317,34 @@
 
 
                     <h6>Quantidade</h6>
-                    <button  onClick="AumentaPerc();">+</button>
-                    <input style="height: 35px; width: 35px" type='number' id="percentual" name="percentual" />
-                    <button onClick="DiminuiPerc();">-</button>
-                    <br/>
+                    
+                    <input style="height: 35px; width: 40px" type='number' id="percentual" name="percentual" />
+                    
 
 
-                    <a href="comprar.html" > <img src="img/com.png"/> </a>
+                    <!--<a href="carrinho.html" > <img src="img/com.png"/> </a>-->
+                    <div style="padding:  3px;" > </div>
+                    <a style="padding:  3px;"   href="carrinho.html" class="btn btn-outline-success my-2 my-sm-0 bg-dark centralizar">Comprar</a>
+
 
                 </div>
 
             </div> 
-
-            <div class="row">
+            <br>
+            <div class="row" >
 
                 <!--FRETE-->
-                <div class="col" > 
-                    <h6>Calcular Frete</h6>
-
-                    <form method="get" action="">
-                        <table width="988" border="0" cellspacing="0" cellpadding="0">
-                            <tr>
-                                <td width="408">
-                                    CEP Destino: 
-                                    <input name="cepDestino" type="number" id="cepDestino">
-                                    <input name="postok" type="button" id="postok" value="Calcular" onClick="calculoFrete();">
-                                    <input name="cepOrigem" type="hidden" id="cepOrigem" value="86975-000">
-                                    <input name="peso" type="hidden" id="peso" value="10"></td>
-                                <td width="580"><div class="texto" id="result"></div></td>
-                            </tr>
-                        </table>
-                    </form>
+                
+                
+                <div class="col" style="padding-left: 600px"  > 
+                    
+                    <h6 class="card-title">Consulte o frete e prazos de entrega</h6>
+                            <form class="form-inline">
+                                <div class="form-group ">
+                                    <input type="text" class="form-control" id="inputPassword2" placeholder="Digite seu CEP">
+                                </div>
+                                <button type="submit" class="btn btn-outline-success my-2 my-sm-0 bg-dark">Consultar</button><br/>
+                    
 
                 </div>
 
@@ -375,7 +360,7 @@
                         As Essências Zomo vem em embalagens de 50g, 500g e 6Kg. </p>
                 </div>
                 <!--VALORES-->
-              
+
 
 
 
@@ -393,10 +378,10 @@
 
 
 
-            
+
             <!--rodapé-->
             <div class="container"> 
-                
+
                 <div class="row" >
 
                     <div class="col">
@@ -444,11 +429,11 @@
 
 
 
-                   <div class="col">
-                                <h6 class=" text-secondary fa fa-cart-plus" style="font-size: 15px; " > Formas de pagamento </h6>
+                    <div class="col">
+                        <h6 class=" text-secondary fa fa-cart-plus" style="font-size: 15px; " > Formas de pagamento </h6>
 
-                                <img   style="width: 300px; height: 200px;" src="img/credd.png"/> 
-                            </div>
+                        <img   style="width: 300px; height: 200px;" src="img/credd.png"/> 
+                    </div>
 
                 </div>
 
@@ -456,12 +441,12 @@
 
             <!--------------------------------------------->
 
-        
-        <h6 class="fa fa-copyright text-secondary text-center" aria-hidden="true"  style="font-size: 12px; 
-            position:relative;
-            bottom:0; 
-            width:100%;
-            margin-top: 10px; "> Copyright 2017 - Fernando Bento - Todos os direitos reservados</h6>
+
+            <h6 class="fa fa-copyright text-secondary text-center" aria-hidden="true"  style="font-size: 12px; 
+                position:relative;
+                bottom:0; 
+                width:100%;
+                margin-top: 10px; "> Copyright 2017 - Fernando Bento - Todos os direitos reservados</h6>
 
 
 
