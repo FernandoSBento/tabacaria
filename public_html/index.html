@@ -182,6 +182,36 @@
                 }
 
 
+                a.tooltip{
+                    position:relative; 
+                    font-size:12px; 
+                    color:#039;
+                    text-decoration:none;
+                    cursor:help; 
+                }
+
+                a.tooltip:hover{
+                    background:transparent;
+                    color:#f00;
+                    z-index:25; 
+
+                }
+                a.tooltip span{display: none
+                }
+
+                a.tooltip:hover span{ 
+                    display:block;
+                    position:absolute;
+                    width:210px; 
+                    top:20px;
+                    left:0;
+                    font-size: 12px;
+                    padding:5px;
+                    border:1px solid #999;
+                    background:#e0ffff; 
+                    color:#000;
+                }
+
 
 
             </style>
@@ -208,9 +238,10 @@
 
 
 
-                            <a class="nav-item nav-link text-success" href="#f">Minha Conta</a>
+                            <a class="nav-item nav-link text-success" href="Cadastro.html"> Login</a>
 
 
+                          
                             <!------------------------------------------------------------------------------------------------------------------------------------------------>
 
 
@@ -236,50 +267,20 @@
                     </div>
 
 
+
+
+
+
+
+                   
+
                     
+                    <!--------------------------------------------->
+                    <hr>
 
 
-
-
-                <div class="container"> <!-- Container de login --> 
-
-
-                    <div  class="dropdown">
-                        <button   class="btn btn-outline-success my-2 my-sm-0 bg-dark" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Login
-                        </button>
-
-                        <div class="dropdown-menu bg-dark">
-                            <form class="px-4 py-3">
-                                <div class="form-group">
-                                    <label class="text-success" for="exampleDropdownFormEmail1">Email</label>
-                                    <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-                                </div>
-                                <div class="form-group">
-                                    <label class="text-success" for="exampleDropdownFormPassword1">Senha</label>
-                                    <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                                </div>
-                                <div class="form-check">
-                                    <label class="form-check-label text-success">
-                                        <input type="checkbox" class=" form-check-input ">
-                                        Lembrar
-                                    </label>
-                                </div>
-                                <button type="submit" class="btn btn-outline-success my-2 my-sm-0" >Entrar</button>
-                            </form>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-success" href=Cadastro.html>Cadastrar</a>
-                            <a class="dropdown-item text-success" href="#">Esqueceu a senha?</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!--------------------------------------------->
-                <hr>
-
-
-                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 1080px;
-                     height: 300px;">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 1080px;
+                    height: 300px;">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -478,14 +479,14 @@
 
                                         <!--DETALHES, DESCRIÇÃO-->
                                         <div class="detalhes">
-                                        <a class="deta" href="Descricao.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                            <a class="deta" href="Descricao.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
 
-                                        <a class="deta" href="carrinho.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                            <a class="deta" href="carrinho.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
 
 
-                                    </div>
+                                        </div>
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
                                 </div>
@@ -499,14 +500,14 @@
                                         <span class="H-titulo">Zomo Havana Style </span> </br>
                                         <!--DETALHES, DESCRIÇÃO-->
                                         <div class="detalhes">
-                                        <a class="deta" href="Descricao.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                            <a class="deta" href="Descricao.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
 
-                                        <a class="deta" href="carrinho.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                            <a class="deta" href="carrinho.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
 
 
-                                    </div>
+                                        </div>
 
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
@@ -520,15 +521,15 @@
                                     <div  style= "  height: 75%;" >
                                         <span class="H-titulo">Zomo Strong Mint  </span> </br>
                                         <!--DETALHES, DESCRIÇÃO-->
-                                       <div class="detalhes">
-                                        <a class="deta" href="Descricao.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        <div class="detalhes">
+                                            <a class="deta" href="Descricao.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
 
-                                        <a class="deta" href="carrinho.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                            <a class="deta" href="carrinho.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
 
 
-                                    </div>
+                                        </div>
 
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
@@ -547,15 +548,15 @@
                                     <div  style= "  height: 75%;" >
                                         <span class="H-titulo">Zomo Blue Caribean </span> </br>
                                         <!--DETALHES, DESCRIÇÃO-->
-                                       <div class="detalhes">
-                                        <a class="deta" href="Descricao.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        <div class="detalhes">
+                                            <a class="deta" href="Descricao.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
 
-                                        <a class="deta" href="carrinho.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                            <a class="deta" href="carrinho.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
 
 
-                                    </div>
+                                        </div>
 
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
@@ -570,15 +571,15 @@
                                         <span class="H-titulo">Zomo Kiwi Lemon </span> </br>
 
                                         <!--DETALHES, DESCRIÇÃO-->
-                                       <div class="detalhes">
-                                        <a class="deta" href="Descricao.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        <div class="detalhes">
+                                            <a class="deta" href="Descricao.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
 
-                                        <a class="deta" href="carrinho.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                            <a class="deta" href="carrinho.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
 
 
-                                    </div>
+                                        </div>
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
                                 </div>
@@ -592,14 +593,14 @@
                                         <span class="H-titulo">Zomo Passion Fruit </span> </br>
                                         <!--DETALHES, DESCRIÇÃO-->
                                         <div class="detalhes">
-                                        <a class="deta" href="Descricao.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                            <a class="deta" href="Descricao.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
 
-                                        <a class="deta" href="carrinho.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                            <a class="deta" href="carrinho.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
 
 
-                                    </div>
+                                        </div>
 
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
@@ -613,15 +614,15 @@
                                     <div  style= "  height: 75%;" >
                                         <span class="H-titulo">Zomo Splash Lemon </span> </br>
                                         <!--DETALHES, DESCRIÇÃO-->
-                                       <div class="detalhes">
-                                        <a class="deta" href="Descricao.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        <div class="detalhes">
+                                            <a class="deta" href="Descricao.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
 
-                                        <a class="deta" href="carrinho.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                            <a class="deta" href="carrinho.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
 
 
-                                    </div>
+                                        </div>
 
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
@@ -644,15 +645,15 @@
                                     <div  style= "  height: 75%;" >
                                         <span class="H-titulo">Adalya Love66</span> </br>
                                         <!--DETALHES, DESCRIÇÃO-->
-                                       <div class="detalhes">
-                                        <a class="deta" href="Descricao.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        <div class="detalhes">
+                                            <a class="deta" href="Descricao.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
 
-                                        <a class="deta" href="carrinho.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                            <a class="deta" href="carrinho.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
 
 
-                                    </div>
+                                        </div>
 
                                         <span class="H-subtitulo">  <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
@@ -667,15 +668,15 @@
                                     <div  style= "  height: 75%;" >
                                         <span class="H-titulo">Adalya Açai</span> </br>
                                         <!--DETALHES, DESCRIÇÃO-->
-                                      <div class="detalhes">
-                                        <a class="deta" href="Descricao.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        <div class="detalhes">
+                                            <a class="deta" href="Descricao.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
 
-                                        <a class="deta" href="carrinho.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                            <a class="deta" href="carrinho.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
 
 
-                                    </div>
+                                        </div>
 
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
@@ -690,15 +691,15 @@
                                         <span class="H-titulo">Adalya Chilly Cherry</span> </br>
 
                                         <!--DETALHES, DESCRIÇÃO-->
-                                       <div class="detalhes">
-                                        <a class="deta" href="Descricao.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        <div class="detalhes">
+                                            <a class="deta" href="Descricao.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
 
-                                        <a class="deta" href="carrinho.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                            <a class="deta" href="carrinho.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
 
 
-                                    </div>
+                                        </div>
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
                                 </div>
@@ -713,14 +714,14 @@
 
                                         <!--DETALHES, DESCRIÇÃO-->
                                         <div class="detalhes">
-                                        <a class="deta" href="Descricao.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                            <a class="deta" href="Descricao.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
 
-                                        <a class="deta" href="carrinho.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                            <a class="deta" href="carrinho.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
 
 
-                                    </div>
+                                        </div>
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
                                 </div>
@@ -741,14 +742,14 @@
 
                                         <!--DETALHES, DESCRIÇÃO-->
                                         <div class="detalhes">
-                                        <a class="deta" href="Descricao.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                            <a class="deta" href="Descricao.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
 
-                                        <a class="deta" href="carrinho.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                            <a class="deta" href="carrinho.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
 
 
-                                    </div>
+                                        </div>
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
                                 </div>
@@ -762,15 +763,15 @@
                                         <span class="H-titulo">Adalya Ice Bonbon</span> </br>
 
                                         <!--DETALHES, DESCRIÇÃO-->
-                                       <div class="detalhes">
-                                        <a class="deta" href="Descricao.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        <div class="detalhes">
+                                            <a class="deta" href="Descricao.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
 
-                                        <a class="deta" href="carrinho.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                            <a class="deta" href="carrinho.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
 
 
-                                    </div>
+                                        </div>
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
                                 </div>
@@ -784,15 +785,15 @@
                                         <span class="H-titulo">Adalya Lemon Pie</span> </br>
 
                                         <!--DETALHES, DESCRIÇÃO-->
-                                       <div class="detalhes">
-                                        <a class="deta" href="Descricao.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        <div class="detalhes">
+                                            <a class="deta" href="Descricao.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
 
-                                        <a class="deta" href="carrinho.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                            <a class="deta" href="carrinho.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
 
 
-                                    </div>
+                                        </div>
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
                                 </div>
@@ -805,15 +806,15 @@
                                     <div  style= "  height: 75%;" >
                                         <span class="H-titulo">Adalya Maracuja </span> </br>
                                         <!--DETALHES, DESCRIÇÃO-->
-                                       <div class="detalhes">
-                                        <a class="deta" href="Descricao.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
+                                        <div class="detalhes">
+                                            <a class="deta" href="Descricao.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/detalhes.PNG"/> <a/>
 
-                                        <a class="deta" href="carrinho.html"/>  <img   
-                                            style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
+                                            <a class="deta" href="carrinho.html"/>  <img   
+                                                style=" width: 111px; height: 24px;position:relative;top:50%; left:15%;" src="img/COMPRAR.png"/> <a/>
 
 
-                                    </div>
+                                        </div>
                                         <span class="H-subtitulo"> <span class="´emoji-Apple´" title="´Trade" span=""></span></span>
                                     </div>
                                 </div>

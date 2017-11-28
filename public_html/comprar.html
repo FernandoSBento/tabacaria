@@ -141,288 +141,43 @@
                 float: none;
                 overflow: hidden;}
 
+            a.tooltip{
+  position:relative; 
+  font-size:12px; 
+  color:#039;
+  text-decoration:none;
+  cursor:help; 
+  }
+ 
+  a.tooltip:hover{
+  background:transparent;
+  color:#f00;
+  z-index:25; 
+ 
+  }
+  a.tooltip span{display: none
+  }
+ 
+  a.tooltip:hover span{ 
+  display:block;
+  position:absolute;
+  width:210px; 
+  top:20px;
+  left:0;
+  font-size: 12px;
+  padding:5px;
+  border:1px solid #999;
+  background:#e0ffff; 
+  color:#000;
+  }
         </style>
 
       
 
     </head> 
 
-    <body style="background-color: #333333">
+    <body >
 
-        <div class="container" style="background-color: #e7e7e7">
-
-
-
-
-
-            <!--topo-->
-            <div class="container"> 
-
-                <nav class="navbar navbar-dark bg-dark">
-                    <a class="navbar-brand font-weight-bold text-success"   href="index.html">Beer House - Conveniência e Tabacaria</a>
-
-                    <!--<a class="nav-item nav-link active text-success" href="#">Acessorios <span class="sr-only">(current)</span></a>-->
-                    <div class="dropdown">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Meus pedidos
-                        </button>
-                        <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
-                            <h1>Arrumar</h1>
-                        </div>
-                    </div>
-
-
-
-                    <!------------------------------------------------------------------------------------------------------------------------------------------------>
-
-
-                    <!------------------------------------------------------------------------------------------------------------------------------------------------>
-                    <!--<a class="nav-item nav-link text-success" href="#">Essência</a>-->
-
-
-                    <div class="dropdown">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Minha Conta
-                        </button>
-                        <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
-                            <h1>Arrumar</h1>
-                        </div>
-                    </div>
-
-                    <!---------------------------------------------------------------------------------------------------------------------------->
-                    <a class="nav-item nav-link text-success" href="Cadastro.html">Contato</a>
-
-
-
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
-
-                    </form>
-
-                </nav>
-
-
-                <!--<h4>Menu horizontal (navbar)</h4>-->
-            </div>
-
-
-
-
-            <div class="container"> <!-- Container de login --> 
-
-
-                <div class="dropdown">
-                    <button class="btn btn-outline-success my-2 my-sm-0 bg-dark" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Login
-                    </button>
-
-                    <div class="dropdown-menu bg-dark">
-                        <form class="px-4 py-3">
-                            <div class="form-group">
-                                <label class="text-success" for="exampleDropdownFormEmail1">Email</label>
-                                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-                            </div>
-                            <div class="form-group">
-                                <label class="text-success" for="exampleDropdownFormPassword1">Senha</label>
-                                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                            </div>
-                            <div class="form-check">
-                                <label class="form-check-label text-success">
-                                    <input type="checkbox" class=" form-check-input ">
-                                    Lembrar
-                                </label>
-                            </div>
-                            <button type="submit" class="btn btn-outline-success my-2 my-sm-0" >Entrar</button>
-                        </form>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item text-success" href=Cadastro.html>Cadastrar</a>
-                        <a class="dropdown-item text-success" href="#">Esqueceu a senha?</a>
-                    </div>
-                </div>
-            </div>
-
-            <!--------------------------------------------->
-            <hr>
-            <hr>
-            <!--conteudo-->
-
-
-            <div class="row">
-                <!--imagem-->
-                <div class="col">
-
-                    <div class="h-box" style="width: 600px; height: 150px" >
-
-                        <div >  <h6>Produto</h6>
-                            <img style="width: 400px; height: 70px; position: relative" src="img/zomo compra.png"/> <h4>asdasd</h4>
-
-
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="h-box" style="width: 100px; height: 150px" >
-
-                        <div style="text-align: center" >
-                            <h6>Qtde</h6> <br>
-
-                            <h5 style="font-size: 18px; text-align: center;">3</h5>
-
-
-                        </div>
-
-                    </div>
-
-                    <div class="h-box" style="width: 130px; height: 150px" >
-
-                        <div >
-                            <h6>Valor Unit.</h6> <br>
-                            <h5 style="font-size: 18px; text-align: center;">R$ 10,00</h5>
-
-                        </div>
-
-                    </div>
-                    <div class="h-box" style="width: 130px; height: 150px" >
-
-                        <div >
-                            <h6>Valor Total</h6><br>
-                            <h5 style="font-size: 18px; text-align: center">R$ 30,00</h5>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-
-
-
-            </div> 
-
-            <div class="row">
-
-                <!--FRETE-->
-                <div class="col-4" > 
-                    <h6>Calcular Frete</h6>
-
-                    <form method="get" action="">
-                        <table width="988" border="0" cellspacing="0" cellpadding="0">
-                            <tr>
-                                <td width="408">
-                                    CEP Destino: 
-                                    <input name="cepDestino" type="text" id="cepDestino">
-                                    <input name="postok" type="button" id="postok" value="Calcular" onClick="calculoFrete();">
-                                    <input name="cepOrigem" type="hidden" id="cepOrigem" value="86975-000">
-                                    <input name="peso" type="hidden" id="peso" value="10"></td>
-                                <td width="580"><div class="texto" id="result"></div></td>
-                            </tr>
-                        </table>
-                    </form>
-
-                </div>
-
-            
-            <hr>
-            <div class="col" style="float: left">
-                <!--FORMAS DE ENTREGA-->
-                <div class="col"> <H6 style="text-align: center" id="desc"> Pagamento</H6>
-                    
-                    <div class="h-box" style="width: 200px; height: 500px; float: left" >
-
-                       
-
-                    </div>
-                    
-                
-                </div>
-                <!--VALORES-->
-
-
-
-
-            </div>
-            </div> 
-            <hr>
-            
-            <hr>
-            <!--------------------------------------------->
-
-
-
-
-            <!--rodapé-->
-            <div class="container"> 
-
-                <div class="row" >
-
-                    <div class="col">
-                        <!--<h4>Departamentos</h4>-->
-                        <h6 class=" text-secondary" style="font-size: 15px"> Atendimento </h6>
-
-                        <ul class="list-unstyled text-secondary">
-                            <h6>De segunda à sexta. Das 15h às 22h </h6>
-                            <h5 style=" font-size: 17px; ">Telefones</h5>
-                            <li>(43) 9 8404-4138 </li>
-                            <li>(44) 9 9857-4562 </li>
-
-
-                        </ul>
-
-                        <hr>
-                        <h6 class=" text-secondary" style="font-size: 15px; " > Endereço </h6>
-
-                        <ul class="list-unstyled text-secondary" >
-                            <li>Av. Brasil</li>
-                            <li>Nº 1880</li>
-                            <li>CEP: 87660-000</li>
-                            <li>Paranacity - PR</li>
-
-
-                        </ul>
-                    </div>
-
-                    <div class="col list-group" style="text-align: center">
-                        <!--<h4>Minha Conta</h4>-->
-                        <!--<a href="#" class="btn btn-success">Login</a>-->
-                        <h6 class=" text-secondary" style="font-size: 16px" > Rede social </h6>
-
-
-                        <a class="fa fa-facebook-square text-secondary" 
-                           style="text-decoration: none; line-height: 2.0; center" href="#" > Facebook </a> 
-
-                        <a  class="fa fa-twitter-square text-secondary" 
-                            style="text-decoration: none; line-height: 2.0; center" href="#"  >Twitter </a> 
-
-                        <a   class="fa fa-instagram list-unstyled text-secondary"  
-                             style="text-decoration: none; line-height: 2.5; center" href="#" > Instagram </a> 
-
-                    </div>
-
-
-
-                    <div class="col">
-                        <h6 class=" text-secondary fa fa-cart-plus" style="font-size: 15px; " > Formas de pagamento </h6>
-
-                        <img   style="width: 300px; height: 200px;" src="img/credd.png"/> 
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!--------------------------------------------->
-
-       
-        <h6 class="fa fa-copyright text-secondary text-center" aria-hidden="true"  style="font-size: 12px; 
-            position:relative;
-            bottom:0; 
-            width:100%;
-            margin-top: 10px; "> Copyright 2017 - Fernando Bento - Todos os direitos reservados</h6>
-
- </div>
-
+     
     </body>
 </html>

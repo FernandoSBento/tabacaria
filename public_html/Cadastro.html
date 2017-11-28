@@ -148,19 +148,21 @@
 
 
                 }
-                
-                
+
+
                 .carrinho{
-                    
+
                     float: right;
                     width: 50%;
-                    
+
                 }
                 #btn {
                     width: 50px;
                     height: 100px;
-                    
+
                 }
+
+
             </style>
 
         </head>
@@ -169,14 +171,14 @@
         <body style="background-color: #333333">
 
 
-            <div class="container" style="background-color: #e7e7e7">
+                <div class="container" style="background-color: #e7e7e7">
 
 
 
 
 
                     <!--topo-->
-                     <div class="container"> 
+                    <div class="container"> 
 
                         <nav class="navbar navbar-dark bg-dark">
                             <a class="navbar-brand font-weight-bold text-success"   href="index.html">Beer House - Conveniência e Tabacaria</a>
@@ -185,8 +187,7 @@
 
 
 
-                            <a class="nav-item nav-link text-success" href="#">Minha Conta</a>
-
+                            <a class="nav-item nav-link text-success" href="Cadastro.html"> Login</a>
 
                             <!------------------------------------------------------------------------------------------------------------------------------------------------>
 
@@ -213,175 +214,162 @@
                     </div>
 
 
-                    <div class="container-fluid"  >
-                        <div class="col"  > 
-                        <div  class="row" >
-                            <div style=" padding-left: 975px ;float: right;  "> 
-                                <a href="comprar.html" /> <img style="width: 110px; height: 40px; float: right; " src="img/meucarrinho.png" />  </a>
-                        
-                        </div>
-                        </div>
-                    </div>
-                    
-                    </div>
-                    
-                    
 
 
-                    <div class="container"> <!-- Container de login --> 
 
 
-                        <div  class="dropdown">
-                            <button   class="btn btn-outline-success my-2 my-sm-0 bg-dark" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Login
-                            </button>
 
-                            <div class="dropdown-menu bg-dark">
-                                <form class="px-4 py-3">
-                                    <div class="form-group">
-                                        <label class="text-success" for="exampleDropdownFormEmail1">Email</label>
-                                        <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="text-success" for="exampleDropdownFormPassword1">Senha</label>
-                                        <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label text-success">
-                                            <input type="checkbox" class=" form-check-input ">
-                                            Lembrar
-                                        </label>
-                                    </div>
-                                    <button type="submit" class="btn btn-outline-success my-2 my-sm-0" >Entrar</button>
-                                </form>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item text-success" href=Cadastro.html>Cadastrar</a>
-                                <a class="dropdown-item text-success" href="#">Esqueceu a senha?</a>
-                            </div>
-                        </div>
-                    </div>
+
 
                     <!--------------------------------------------->
                     <hr>
-                    
-                    
-                   
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
+
+
+
+
+
+
+
+
+
+
+
+
                     <!--conteudo-->
 
 
                     <div class="row">
 
+                        <div class="row ">
+                            <div class="col-6"> 
 
-<div class="col" style="text-align: center; ">
+                                <div class="card float-left">
+                                    <h4 class="card-header">
+                                        Já é cadastrado?
+                                        <spam><h6>Então faça o login</h6></spam>
+                                    </h4>
 
-                    <div class="rol"> 
-                    <form class="form-horizontal">
-                        <fieldset>
-
-
-                            <legend>Formulário de cadastro</legend>
-
-
-                            <label class="control-label">Nome</label>
-                            <div class="controls">
-                                <input id="nome" name="nome" type="text" placeholder="Insira seu nome" class="input-xlarge" required>
-                                <p class="help-block">* Campo Obrigatório</p>
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-9">
+                                                    <label for="inputEmail4">Email</label>
+                                                    <input type="email" class="form-control" id="email" placeholder="email@email.com">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPassword4">Crie sua senha</label>
+                                                    <input type="password" class="form-control" id="senha" placeholder="Password">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox"> Lembrar
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-success">Entrar</button>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- ........................................................... -->
+                            <div class="col-6"> 
 
+                                <div class="card">
+                                    <h4 class="card-header">
+                                        Ainda não é cadastrado?
+                                        <spam><h6>Então cadastre-se agora</h6></spam>
+                                    </h4>
 
+                                    <div class="card-body">
+                                        <form>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-9">
+                                                    <label for="inputEmail4">Email</label>
+                                                    <input type="email" class="form-control" id="email" placeholder="email@email.com">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPassword4">Crie sua senha</label>
+                                                    <input type="password" class="form-control" id="senha" placeholder="Password">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputPassword4">Confirme sua senha</label>
+                                                    <input type="password" class="form-control" id="confirmaSenha" placeholder="Password">
+                                                </div>
 
-                            <label class="control-label">Email</label>
-                            <div class="controls">
-                                <input id="email" name="email" type="email" placeholder="Insira seu email" class="input-xlarge" required>
-                                <p class="help-block">* Campo Obrigatório</p>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputAddress2">RG</label>
+                                                    <input type="text" class="form-control" id="rg" placeholder="xxxxxxxxxxxx">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputAddress2">CPF</label>
+                                                    <input type="text" class="form-control" id="cpf" placeholder="zzzzzzzzzzzzz">
+                                                </div>
+                                                <div class="form-group col-md-12">
+                                                    <label for="inputAddress">Endereço</label>
+                                                    <input type="text" class="form-control" id="endereco" placeholder="Rua A, 000">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6">
+                                                    <label for="inputCity">Cidade</label>
+                                                    <input type="text" class="form-control" id="inputCity">
+                                                </div>
+                                                <div class="form-group col-md-4">
+                                                    <label for="inputState">Estado</label>
+                                                    <select id="inputState" class="form-control">
+                                                        <option selected>Escolha...</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group col-md-2">
+                                                    <label for="inputZip">CEP</label>
+                                                    <input type="text" class="form-control" id="inputZip">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="form-check">
+                                                    <label class="form-check-label">
+                                                        <input class="form-check-input" type="checkbox"> Lembrar
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <button type="submit" class="btn btn-success">Cadastrar</button>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
-
-
-
-                            <label class="control-label">Senha</label>
-                            <div class="controls">
-                                <input id="senha" name="password" type="password" placeholder="Insira uma senha" class="input-xlarge" required>
-                                <p class="help-block">* Campo Obrigatório</p>
-                            </div>
-
-
-
-
-
-                            <label class="control-label">Sexo</label>
-                            <div class="controls">
-                                <label class="radio">
-                                    <input type="radio" name="sexo" value="Masculino" checked="checked">
-                                    Masculino
-                                </label>
-                                <label class="radio">
-                                    <input type="radio" name="sexo" value="Feminino">
-                                    Feminino
-                                </label>
-                            </div>
-
-
-
-
-                            <label class="control-label">Foto</label>
-                            <div class="controls">
-                                <input id="foto" name="foto" class="input-file" type="file">
-                            </div>
-
-
-
-
-                            <label class="control-label"></label>
-                            <div class="controls">
-                                <button id="enviar" name="enviar" class="btn btn-primary">Enviar</button>
-                                <input class="btn btn-primary" type="button" value="Voltar" onClick="history.go(-1)">
-                            </div>
-
-
-                        </fieldset>
-                    </form>
-
-
-
-</div>
-                </div>
-                </div>
-
-
-                        <div class="col">
-
-                        
-
-                            <!--<h4>categorias</h4>-->
                         </div>
 
+                    </div>
+
+
+                    <div class="col">
+
+
+
+                        <!--<h4>categorias</h4>-->
+                    </div>
 
 
 
 
-                        <div class="col-10">
 
-                            <div class="row" >
-                      
-                </div>
-                </div>
-               
-                    
-                    
-                    
-                    
-                    
-                    
-                <h6 class="fa fa-copyright text-secondary text-center" aria-hidden="true"  style="font-size: 12px; 
+                    <div class="col-10">
+
+                        <div class="row" >
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                    <h6 class="fa fa-copyright text-secondary text-center" aria-hidden="true"  style="font-size: 12px; 
                     position:relative;
                     bottom:0; 
                     width:100%;
